@@ -72,7 +72,7 @@ You should know, or easily find, the answer to questions such as:
 - *Why do the search queries `jaguar car` and `jaguar -car` give different results on Google?*
 - *Name at least 10 file types.*
 - *What is the username I usually use on public-facing platforms?*
-- *What is Two-Factor Authentification? (2FA)?*
+- *What is Two-Factor Authentication? (2FA)?*
 - *How is my harddisc formatted?*
 - *How can I upgrade my OS and frequently used software?*
 - *How is the data on my computer protected from unauthorised access?*
@@ -210,7 +210,7 @@ We will be focusing on Markdown as a source language, and then use open source t
 Markdown is a very lightweight markup language, that was designed to be maximally *human readable*, that is, looking meaningful *without* being compiled by a computer.
 Most of the syntax takes its clues from how people have already formatted plain text, such as enclosing a `*word*` with `*` for *highlighting*.
 
-Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HMTL`, as, for example, this website (which is written in a flavor of Markdown).
+Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HTML`, as, for example, this website (which is written in a flavor of Markdown).
 
 By convention, Markdown files use the `.md` file extension.
 It's important to recognize that still, an `.md` is a *plain text file*.
@@ -328,7 +328,7 @@ You may want to use Docker in class to quickly get a development environment, bu
 
 #### Resources
 
-- Install Docker Deskop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+- Install Docker Desktop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
   **If you don't meet the system requirements (especially on Windows), you can install the legacy [Docker Toolbox](https://docs.docker.com/toolbox/overview/) (not recommended) (also see [#144](https://github.com/soztag/fossos/issues/144))**.
 - [Docker Overview](https://docs.docker.com/engine/docker-overview/)
 - [Get Started](https://docs.docker.com/get-started/)
@@ -429,7 +429,7 @@ We will use it to learn the branch and pull-request model.
 - [How to fork](https://guides.github.com/activities/forking/)
 - [Understanding the GitHub Flow](https://desktop.github.com)
 - [Resolving a Merge Conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
-- [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
+- [Comparing Commits across time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
 ### Package Management (optional) {#pkg-mngt}

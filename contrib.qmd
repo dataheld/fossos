@@ -53,7 +53,7 @@ If you have already had some programming experience and would describe yourself 
 
 > Previously, we have discussed what are open source projects and why open source is good for your business. In this article, we'll explain why you should contribute to such projects, how to contribute, and what projects to choose. Who are just starting their career and would like to get involved with the community (and maybe become a coding genius).
 
-### **E ** Start your Open Source Carreer - 13 min read to go ahead
+### **E ** Start your Open Source Career - 13 min read to go ahead
 
 Ok. Now it’s time to start your Open Source Career. This [blog](https://blog.algolia.com/start-your-open-source-career/) of Vincent Voyer helps you getting your feet wet. It takes only 13 minutes to read.
 

@@ -27,11 +27,11 @@ l <- list(number = c(12,13), fruit = "apple", nested_list = list(first = 1/3, se
 sum(l[[1]])
 l["fruit"]  # this gives the box
 l[["fruit"]]  # this gives content of the box
-l$fruit  # same as line above, just with syntatic sugar
+l$fruit  # same as line above, just with syntactic sugar
 
 # ========= names
 vec <- c(one = 1, five = 5)  # now a named vector
-vec[1]  # can still subset on indeces
+vec[1]  # can still subset on indices
 vec["five"]  # can also subset on the name
 vec[["five"]]  # this works as well, but gives same result, because there's no box
 
@@ -57,7 +57,7 @@ names(unnamed_vec) <- c("one", "two")
 
 # ==== dataframes
 # below separate vectors are scary, because the ordering might change and links between same individuals might get confused
-# indeces are individuals in the below, but this is not visible or properly stored
+# indices are individuals in the below, but this is not visible or properly stored
 df <- data.frame(
   # DATA (this gets filled into the ... argument)
   shoesize = c(39, 42, 45),
@@ -69,7 +69,7 @@ df <- data.frame(
   stringsAsFactors = FALSE
   # what is a data frame?
     # list of vectors each with the same length
-    # indeces match across rows
+    # indices match across rows
     # list elements (which become df columns) are vectors
       # (later on, columns also be lists or matrices)
 )
