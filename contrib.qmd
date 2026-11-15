@@ -3,12 +3,8 @@ title: "Contributing to Open Source"
 author:
   - name: "Dominik Bertram"
     affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-date: "`r format(file.info('contrib.Rmd')$mtime, '%d %B, %Y')`"
+date: 2019-06-01
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 # How to Start
 
@@ -16,9 +12,7 @@ Mastering the entry into open source can be frightening. To make your contributi
 
 First of all, it makes sense to spend some time on blogs on this topic.
 
-```{r water, fig.cap="[Photo by Muneeb Syed on Unsplash](https://unsplash.com/photos/h9RLgKtwwwY).", out.width='100%'}
-knitr::include_graphics(path = "img/water.jpg")
-```
+![[Photo by Muneeb Syed on Unsplash](https://unsplash.com/photos/h9RLgKtwwwY).](img/water.jpg)
 
 > Are you experiencing a bug with an open source project? Dig in and don’t stop at your local workaround. Your solution can benefit others and lead you to more open source contributions. - [Vincent Voyer](https://github.com/vvo)
 
@@ -95,9 +89,7 @@ Finally some open source projects being high-rated on GitHub:
 
 > Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
-```{r visual-studio-code, fig.cap="[Visit them.](https://code.visualstudio.com)", out.width='15%'}
-knitr::include_graphics(path = "img/visual-studio-code.png")
-```
+![[Visit them.](https://code.visualstudio.com)](img/visual-studio-code.png){width="15%"}
 
 #### React Native
 
@@ -105,9 +97,7 @@ knitr::include_graphics(path = "img/visual-studio-code.png")
 
 > React Native is an open-source mobile application framework created by Facebook. It is used to develop applications for Android, iOS and UWP by enabling developers to use React along with native platform capabilities.
 
-```{r react-native, fig.cap="[Visit them.](https://facebook.github.io/react-native/)", out.width='25%'}
-knitr::include_graphics(path = "img/react-native.png")
-```
+![[Visit them.](https://facebook.github.io/react-native/)](img/react-native.png){width="25%"}
   
 #### TensorFlow
 
@@ -115,9 +105,7 @@ knitr::include_graphics(path = "img/react-native.png")
 
 > An open source machine learning library for research and production.
 
-```{r tensor-flow, fig.cap="[Visit them.](https://www.tensorflow.org)", out.width='20%'}
-knitr::include_graphics(path = "img/tensor-flow.png")
-```
+![[Visit them.](https://www.tensorflow.org)](img/tensor-flow.png){width="20%"}
   
 #### Angular
 
@@ -125,9 +113,7 @@ knitr::include_graphics(path = "img/tensor-flow.png")
 
 > Angular is a platform for building mobile and desktop web applications.
 
-```{r angular, fig.cap="[Visit them.](https://angular.io)", out.width='20%'}
-knitr::include_graphics(path = "img/angular.png")
-```
+![[Visit them.](https://angular.io)](img/angular.png){width="20%"}
   
 #### Ansible
 
@@ -135,9 +121,7 @@ knitr::include_graphics(path = "img/angular.png")
 
 > Ansible is the simplest way to automate apps and IT infrastructure. 
 
-```{r ansible, fig.cap="[Visit them.](https://www.ansible.com)", out.width='15%'}
-knitr::include_graphics(path = "img/ansible.png")
-```
+![[Visit them.](https://www.ansible.com)](img/ansible.png){width="15%"}
   
 #### Kubernetes
 
@@ -145,6 +129,4 @@ knitr::include_graphics(path = "img/ansible.png")
 
 > Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
 
-```{r kubernetes, fig.cap="[Visit them.](https://kubernetes.io/de/)", out.width='35%'}
-knitr::include_graphics(path = "img/kubernetes.png")
-```
+![[Visit them.](https://kubernetes.io/de/)](img/kubernetes.png){width="35%"}

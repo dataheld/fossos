@@ -1,0 +1,58 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+metadata-files:
+  - _nullkomma-brand.yml
+website:
+  title: FOSSOS
+  site-url: https://fossos.maxheld.de
+  repo-url: https://github.com/dataheld/fossos
+  navbar:
+    left:
+      - icon: house
+        text: Syllabus
+        href: index.qmd
+      - icon: code-slash
+        text: Stack
+        href: stack.qmd
+      - icon: gear
+        text: More
+        menu:
+          - text: Bibliography Management
+            href: biblio.qmd
+          - text: Going Linux
+            href: linux.qmd
+          - text: Contributing to Open Source
+            href: contrib.qmd
+      - icon: person-video3
+        text: Instructor
+        href: https://www.maxheld.de
+    right:
+      - icon: chat-dots
+        text: Chat
+        href: https://gitter.im/soztag/fossos
+      - icon: list-task
+        text: Issues
+        href: https://github.com/soztag/fossos/issues
+      - icon: kanban
+        text: Kanban
+        href: https://github.com/soztag/fossos/projects/2
+      - icon: github
+        text: Source
+        href: https://github.com/dataheld/fossos
+      - icon: bank
+        menu:
+          - text: UnivIS
+            href: http://univis.fau.de/
+          - text: meincampus
+            href: https://www.campus.uni-erlangen.de/
+          - text: Institut für Soziologie
+            href: https://www.soziologie.phil.fau.de
+          - text: Nuremberg Campus of Technology
+            href: https://www.ncatec.de
+format:
+  html:
+    css: styles.css
+    toc: true
+    toc-depth: 3
