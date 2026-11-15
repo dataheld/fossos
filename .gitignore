@@ -1,6 +1,24 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-_site/
 .DS_Store
+
+# nullkomma:git:start
+.quarto/
+_site/
+site_libs/
+.luarc.json
+result
+result-*
+.direnv/
+/.nullkomma/cloudflare/
+/.nullkomma/gcroots/
+.playwright-mcp/
+/.mcp.json
+/.nvim.lua
+/.vscode/extensions.json
+/.vscode/mcp.json
+/.vscode/settings.json
+/_nullkomma-brand.yml
+/privacy.qmd
+# nullkomma:git:end
+
+/.quarto/
+**/*.quarto_ipynb

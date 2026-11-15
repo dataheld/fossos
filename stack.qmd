@@ -3,13 +3,8 @@ title: "Stack"
 author:
   name: "Maximilian Held"
   affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-bibliography: library.bib
+date: 2020-04-30
 ---
-
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 Here's the software stack we'll be using.
 
@@ -25,45 +20,46 @@ Relying on, or pushing proprietary services, especially in an education context,
 For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
 In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services.
 
-<div class="alert alert-info" role="alert">
+::: {.alert .alert-info role="alert"}
 The stack is listed below in the **approximate order** in which software is covered in this class, and together with **mandatory study material** and **tasks**.
 
 The first couple of topics and tools should be covered by everyone.
 Later, more advanced topics can be chosen by students according to their interest, as illustrated in the below flowchart.
 
-```{r, fig.cap="Flow Chart of Covered Topics"}
-DiagrammeR::mermaid(diagram = "topics.mmd")
+```{mermaid}
+%%| fig-cap: Flow Chart of Covered Topics
+%%| file: topics.mmd
 ```
 
-</div>
+:::
 
 
 ## Introduction
 
 For the introductory session, participants should watch this video:
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cpbtcsGE0OA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+{{< video https://www.youtube-nocookie.com/embed/cpbtcsGE0OA >}}
 
 Here's the corresponding [slide deck](https://speakerdeck.com/hadley/you-cant-do-data-science-in-a-gui).
 
 
-### Installation {.alert .alert-info}
+::: {.alert .alert-info}
+### Installation
 
 Participants should install all of the below software and sign up for all the below services **before the first class**.
 
 If you are using Docker, *some* of the software is already contained in the image, though "local" installation may still be advisable.
 
 The steps required for installation will depend on your platform and system setup.
+:::
 
 
 ### Basic Computing Literacy
 
-<div class="alert alert-warning" role="alert">
+::: {.alert .alert-warning role="alert"}
 ... is expected.
 To *start* this class you need to know your way around your own computer and commonly used technologies.
-</div>
+:::
 
 You should know, or easily find, the answer to questions such as:
 
@@ -76,7 +72,7 @@ You should know, or easily find, the answer to questions such as:
 - *Why do the search queries `jaguar car` and `jaguar -car` give different results on Google?*
 - *Name at least 10 file types.*
 - *What is the username I usually use on public-facing platforms?*
-- *What is Two-Factor Authentification? (2FA)?*
+- *What is Two-Factor Authentication? (2FA)?*
 - *How is my harddisc formatted?*
 - *How can I upgrade my OS and frequently used software?*
 - *How is the data on my computer protected from unauthorised access?*
@@ -97,25 +93,25 @@ If you feel like you need to brush up on some basic computing skills, these reso
 
 ### Project Management {#pm}
 
-<i class="fab fa-github fa-3x fa-pull-left"></i>  <a class="btn btn-primary" href="https://github.com" role="button">Sign up to GitHub.com</a>  
+[]{.bi-github .stack-icon aria-hidden="true"} [Sign up to GitHub.com](https://github.com){.btn .btn-primary role="button"}  
 
 GitHub is a collaboration platform, code repository and git host (more on all of below) *along with some helpful project management tools*.
 
-<div class="alert alert-info" role="alert">
+::: {.alert .alert-info role="alert"}
 Choose your username carefully: it should be easy to type, and clearly identify you.
 If you already have such a public username on other platforms (say, twitter), consider reusing that.
 Your username need not be your real name, but it makes things easier if it includes (parts of) your name.
-</div>
+:::
 
 Please flesh out your profile on GitHub.com and all of the accounts below a bit by adding a picture, a name and a short description of yourself.
 
 
-<div class="alert alert-warning" role="alert">
+::: {.alert .alert-warning role="alert"}
 Also be careful in choosing your [commit email address](https://help.github.com/articles/about-commit-email-addresses/).
 This should be an email account you have access to forever.
-</div>
+:::
 
-<div class="alert alert-success" role="alert">
+::: {.alert .alert-success role="alert"}
 ... and one last thing: By default, GitHub will notify you via E-Mail about pretty much every repository activity, which will result in a *lot* of email.
 Here's how you can customize or disable [these notifications](https://help.github.com/articles/choosing-the-delivery-method-for-your-notifications/).
 Make sure that you're not missing anything on GitHub.com either.
@@ -123,7 +119,7 @@ Make sure that you're not missing anything on GitHub.com either.
 Here's a sensible set of defaults:
 
 ![Screenshot from [`github.com/settings/notifications`](https://github.com/settings/notifications)](img/notifications.png)
-</div>
+:::
 
 
 #### Resources
@@ -142,13 +138,13 @@ Here's a sensible set of defaults:
 
 ### Community & Help {#help}
 
-<i class="fab fa-stack-overflow fa-3x fa-pull-left"></i> <a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
-<a class="btn btn-primary" href="http://community.rstudio.com" role="button">Sign up to RStudio community</a>
+[]{.bi-stack-overflow .stack-icon aria-hidden="true"} [Sign up to StackOverflow](https://stackoverflow.com){.btn .btn-primary role="button"}
+[Sign up to RStudio community](http://community.rstudio.com){.btn .btn-primary role="button"}
 
-<div class="alert alert-info" role="alert">
+::: {.alert .alert-info role="alert"}
 This includes setting up a decent profile with picture, links etc.
 Same username suggestions apply as above.
-</div>
+:::
 
 Aside from Google, these are two great places to get help, and to get involved in the community.
 
@@ -197,7 +193,7 @@ In addition to StackExchange and RStudio Community, there are a couple of other 
 
 ### Markup Language {#markup}
 
-<a class="btn btn-default" href="https://github.github.com/gfm/" role="button">GitHub Flavored Markdown Spec</a>
+[GitHub Flavored Markdown Spec](https://github.github.com/gfm/){.btn .btn-secondary role="button"}
 
 The full [GFM spec](https://github.github.com/gfm/) is just FYI; there's nothing to install here.
 
@@ -214,7 +210,7 @@ We will be focusing on Markdown as a source language, and then use open source t
 Markdown is a very lightweight markup language, that was designed to be maximally *human readable*, that is, looking meaningful *without* being compiled by a computer.
 Most of the syntax takes its clues from how people have already formatted plain text, such as enclosing a `*word*` with `*` for *highlighting*.
 
-Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HMTL`, as, for example, this website (which is written in a flavor of Markdown).
+Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HTML`, as, for example, this website (which is written in a flavor of Markdown).
 
 By convention, Markdown files use the `.md` file extension.
 It's important to recognize that still, an `.md` is a *plain text file*.
@@ -321,7 +317,7 @@ You won't need this starting out.
 
 ### Containerisation (optional) {#docker}
 
-<i class="fab fa-docker fa-3x fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
+[]{.bi-box-seam .stack-icon aria-hidden="true"} [Install Docker Desktop](https://www.docker.com/products/docker-desktop){.btn .btn-info role="button"}
 
 Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*.
 Containers allow you to run computing environments on other computers.
@@ -332,7 +328,7 @@ You may want to use Docker in class to quickly get a development environment, bu
 
 #### Resources
 
-- Install Docker Deskop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+- Install Docker Desktop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
   **If you don't meet the system requirements (especially on Windows), you can install the legacy [Docker Toolbox](https://docs.docker.com/toolbox/overview/) (not recommended) (also see [#144](https://github.com/soztag/fossos/issues/144))**.
 - [Docker Overview](https://docs.docker.com/engine/docker-overview/)
 - [Get Started](https://docs.docker.com/get-started/)
@@ -382,14 +378,14 @@ You may want to use Docker in class to quickly get a development environment, bu
 
 ### Source Control Management (SCM) {#scm}
 
-<i class="fas fa-code-branch fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
+[]{.bi-git .stack-icon aria-hidden="true"} [Install Git](https://git-scm.com){.btn .btn-info role="button"}
 
 Git is just a CLI program.
 It offers all the functionality of git, but you may also install a Git graphical user interface (GUI).
 
 There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
 
-<i class="fab fa-github fa-3x fa-pull-left"></i>  <a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
+[]{.bi-github .stack-icon aria-hidden="true"} [Install GitHub Desktop](https://desktop.github.com){.btn .btn-info role="button"}
 
 **You should install Git and GitHub Desktop even if you are using Docker**.
 
@@ -420,7 +416,7 @@ You also need to *configure* git on your machine, so that git knows you are and 
 
 ### Branching Model (Optional) {#gitflow}
 
-<a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>
+[GitHub Flow](https://guides.github.com/introduction/flow/){.btn .btn-secondary role="button"}
 
 There is a varied set of practices and tools that have evolved *on top of* Git.
 Together with the powerful git scm, it is these practices and tools, that make massively collaborative software development possible.
@@ -433,26 +429,26 @@ We will use it to learn the branch and pull-request model.
 - [How to fork](https://guides.github.com/activities/forking/)
 - [Understanding the GitHub Flow](https://desktop.github.com)
 - [Resolving a Merge Conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
-- [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
+- [Comparing Commits across time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
 ### Package Management (optional) {#pkg-mngt}
 
-<a class="btn btn-default" href="https://en.wikipedia.org/wiki/APT_(Debian)" role="button">Linux: already ships with `apt`</a>
-<a class="btn btn-info" href="https://brew.sh" role="button">macOS: install home`brew`</a>
-<a class="btn btn-info" href="https://chocolatey.org" role="button">Windows: install chocolatey</a>
+[Linux: already ships with `apt`](https://en.wikipedia.org/wiki/APT_(Debian)){.btn .btn-secondary role="button"}
+[macOS: install home`brew`](https://brew.sh){.btn .btn-info role="button"}
+[Windows: install chocolatey](https://chocolatey.org){.btn .btn-info role="button"}
 
 Installing and upgrading a lot of command line tools and their dependencies gets old quickly.
 Package managers solve this problem; they provide a clean and elegant way to install (CLI) programs, and even allow you to quickly upgrade everything.
 
 You will need to install a package manager independent of using the Docker image.
 
-<div class="alert alert-warning" role="alert">
+::: {.alert .alert-warning role="alert"}
 Consider installing the below software via your package manager.
 Whether this is advisable or even possible for any given piece of software depends on the software and your operating system.
 Google around for advice.
 As a rule of thumb, "heavy" packages (such as LaTeX, Atom or R) are sometimes best installed "by hand".
-</div>
+:::
 
 Notice that LaTeX, Atom and R (all below) each have their own *internal* package managers (as do many other software ecosystems).
 If you're installing a package *for* either of those, use the corresponding ecosystem package manager, *not* your system-wide program (= `brew`, `apt-get`, `cholocatey`).
@@ -460,7 +456,7 @@ If you're installing a package *for* either of those, use the corresponding ecos
 
 ### Text Editor (Optional) {#editor}
 
-<i class="fab fa-react fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
+[]{.bi-code-square .stack-icon aria-hidden="true"} [Install Atom](https://atom.io){.btn .btn-info role="button"}
 
 Whenever we write something in this class, it will be in [plain text](http://en.wikipedia.org/wiki/Plain_text).
 Plain text, roughly speaking, consists *directly* and only of letters, encoded in an open standard.
@@ -515,12 +511,12 @@ Here's a list of packages you might also want to install:
 
 ### R Integrated Development Environment (IDE) {#ide}
 
-<a class="btn btn-info" href="https://www.rstudio.com/products/rstudio/download/#download" role="button">Install RStudio</a>
+[Install RStudio](https://www.rstudio.com/products/rstudio/download/#download){.btn .btn-info role="button"}
 
-<div class="alert alert-warning" role="alert">
+::: {.alert .alert-warning role="alert"}
 *Before* installing RStudio, you must first install R (see below).
 We may, for now, not use R much by itself, but it can be easier to use all the other tools inside of RStudio, rather than separately.
-</div>
+:::
 
 If you are using the Docker container image, RStudio and R are already included.
 
@@ -552,7 +548,7 @@ For most everyone, RStudio will therefore be the strongly recommended choice.
 
 #### Document Conversion (optional) {#conversion}
 
-<i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
+[]{.bi-file-earmark-text .stack-icon aria-hidden="true"} [Install Pandoc](https://pandoc.org){.btn .btn-info role="button"}
 
 We'll often want to convert documents from and to different markup formats.
 For that purpose, we'll use pandoc.
@@ -572,7 +568,7 @@ You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the 
 
 #### Typesetting (optional) {#typesetting}
 
-<i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
+[]{.bi-file-earmark-text .stack-icon aria-hidden="true"} [Install LaTeX](https://www.latex-project.org){.btn .btn-info role="button"}
 
 [(La)TeX](http://www.latex-project.org) is strictly speaking a *typesetting* program, which can create beautiful documents.
 It has extensive support for all sorts of domain-specific typographic niceties, and is used a lot by academics, especially in math and sciences because.
@@ -591,10 +587,10 @@ Still, it is important to learn some of the basics of LaTeX to use it programmat
 
 ### Bibliography Management (optional) {#bib}
 
-<a class="btn btn-info" href="https://github.com/jgm/pandoc-citeproc" role="button">Install Pandoc Citeproc</a>
-<a class="btn btn-default" href="biblio.html" role="button">Install Zotero</a>
+[Install Pandoc Citeproc](https://github.com/jgm/pandoc-citeproc){.btn .btn-info role="button"}
+[Install Zotero](biblio.qmd){.btn .btn-secondary role="button"}
 
-Bibliography management is *not* the focus of this class, but you can learn more about it [here](biblio.html).
+Bibliography management is *not* the focus of this class, but you can learn more about it [here](biblio.qmd).
 
 It is also one of those tools, where there is no strong reason to standardize on any one program, so as long as the bibliography manager exports to one of the formats [that pandoc can ingest](https://pandoc.org/MANUAL.html#citations).
 
@@ -614,7 +610,7 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 
 ### "Base" R {#base-r}
 
-<a class="btn btn-info" href="https://www.r-project.org" role="button">Install R</a>
+[Install R](https://www.r-project.org){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -634,8 +630,8 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 
 ### Literate Programming {#literate}
 
-<a class="btn btn-info" href="https://yihui.name/knitr/" role="button">Install knitr</a>
-<a class="btn btn-info" href="https://rmarkdown.rstudio.com" role="button">Install RMarkdown</a>
+[Install knitr](https://yihui.name/knitr/){.btn .btn-info role="button"}
+[Install RMarkdown](https://rmarkdown.rstudio.com){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -654,7 +650,7 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 
 ### Tidyverse R
 
-<a class="btn btn-info" href="https://www.tidyverse.org" role="button">Install dplyr, tidyr, readr, tibble, purrr and stringr</a>
+[Install dplyr, tidyr, readr, tibble, purrr and stringr](https://www.tidyverse.org){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -669,7 +665,7 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 
 ### Plots
 
-<a class="btn btn-info" href="https://ggplot2.tidyverse.org" role="button">Install ggplot2</a>
+[Install ggplot2](https://ggplot2.tidyverse.org){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -697,9 +693,9 @@ Covering them in any depth, or even listing good resources (of which there are g
 
 ### Interactive Graphics
 
-<a class="btn btn-info" href="https://plot.ly/r/" role="button">Install plotly for R</a>
-<a class="btn btn-info" href="http://www.htmlwidgets.org" role="button">Install htmlwidgets</a>
-<a class="btn btn-info" href="https://rmarkdown.rstudio.com/flexdashboard/" role="button">Install flexdashboard</a>
+[Install plotly for R](https://plot.ly/r/){.btn .btn-info role="button"}
+[Install htmlwidgets](http://www.htmlwidgets.org){.btn .btn-info role="button"}
+[Install flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -716,7 +712,7 @@ Covering them in any depth, or even listing good resources (of which there are g
 
 ### Interactive Webapps
 
-<a class="btn btn-info" href="https://shiny.rstudio.com" role="button">Install shiny</a>
+[Install shiny](https://shiny.rstudio.com){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -736,7 +732,7 @@ Covering them in any depth, or even listing good resources (of which there are g
 
 ### Continuous Integration & Development (CI/CD)
 
-<a class="btn btn-info" href="https://travis-ci.com" role="button">Sign up to Travis CI</a>
+[Sign up to Travis CI](https://travis-ci.com){.btn .btn-info role="button"}
 
 
 #### Resources
@@ -769,7 +765,7 @@ tba.
 
 ### Dependency Management
 
-<a class="btn btn-info" href="https://rstudio.github.io/packrat/" role="button">Install packrat</a>
+[Install packrat](https://rstudio.github.io/packrat/){.btn .btn-info role="button"}
 
 
 ## Package development

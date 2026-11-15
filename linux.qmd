@@ -3,13 +3,8 @@ title: "Linux Setup"
 author:
   name: "Thomas Roppelt"
   affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-date: "`r format(file.info('linux.Rmd')$mtime, '%d %B, %Y')`"
-bibliography: library.bib
+date: 2019-04-10
 ---
-
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 ## Linux distributions (distros)
 

@@ -1,47 +1,32 @@
 ---
 title: "Syllabus"
+subtitle: "Summer Term 2020"
 author:
   name: "Max Held"
   affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-date: "Summer Term 2020"
 bibliography: library.bib
 ---
 
-```{r setup, echo=FALSE, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(printr)
-```
+{{< include README.md >}}
 
+::: {.hero .p-5 .mb-4 .rounded-3}
+::: {.fs-2}
+Software Carpentry: Hacking Skills for Data Science
+:::
 
-```{r readme, child="README.md"}
-```
+... because learning from hackers is learning to win?
 
-<div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-  <h2>Software Carpentry: Hacking Skills for Data Science</h2>
-  <p>... because learning from hackers is learning to win?</p>
-  <p> <span class="label label-default">
-  #DataScience
-  </span>
-  <span class="label label-primary">
-  #rstats
-  </span>
-  <span class="label label-info">
-  Git(Hub)
-  </span>
-    <span class="label label-success">
-  #ReproducibleResearch
-  </span>
-  </p>
-  <p><small><sub>
-    Image Credit: Red Alt [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) [hjl](https://www.flickr.com/photos/hjl/8205547070/in/photolist-dv6zgu-nffY2e)
-  </sub></small></p>
-</div>
+[#DataScience]{.badge .text-bg-secondary}
+[#rstats]{.badge .text-bg-primary}
+[Git(Hub)]{.badge .text-bg-info}
+[#ReproducibleResearch]{.badge .text-bg-success}
+
+[Image Credit: Red Alt [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) [hjl](https://www.flickr.com/photos/hjl/8205547070/in/photolist-dv6zgu-nffY2e)]{.small}
+:::
 
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+{{< video https://www.youtube-nocookie.com/embed/dU1xS07N-FA >}}
 
 > *[Coding – ] it’s the next best thing we have to a superpower.*
 > -- [Drew Houston](@drewhouston) via [code.org](https://code.org)
@@ -70,7 +55,8 @@ library(printr)
 > -- Ivan @Illich-1971
 
 
-## Prerequisites {.alert .alert-success}
+::: {.alert .alert-success}
+## Prerequisites
 
 *Everyone* is welcome to this seminar.
 This is *not* a "proper" computer science class, and participants do *not* need any background in CS, statistics or math.
@@ -85,9 +71,11 @@ No worries, we'll bring everyone up to speed in very little time.
 
 You do *not* need to have completed a prior version of this class, or any other class.
 If you *have* some prior training, you will start the class at a different level.
+:::
 
 
-## Time and Place (Summer Term 2020) {.alert .alert-warning}
+::: {.alert .alert-warning}
+## Time and Place (Summer Term 2020)
 
 This will be an **all-remote**, largely **asynchronous** seminar, held via [Gitter chat](https://gitter.im/soztag/fossos), [GitHub](http://github.com/soztag/fossos) and occasional [Zoom](http://zoom.us) video conference.
 
@@ -122,6 +110,7 @@ We're going to use a few digital tools to work asynchronously.
   If you have your own repo for your own project (advanced students) you can open your own gitter chat and invite the instructor or fellow students for support.
 
 These venues are also linked from the top bar of the class website, so you can always easily find them.
+:::
 
 
 ## Language requirements
@@ -130,7 +119,8 @@ Depending on who will be attending the class, instruction may also occur in engl
 In any event, all of the readings and other course material are in english, and participants are expected to be proficient in reading and writing english technical documents.
 
 
-## A Multi-Semester Series {.alert .alert-info}
+::: {.alert .alert-info}
+## A Multi-Semester Series
 
 It is obviously impossible (for most students) to cover all of the material in this course in *one* semester.
 
@@ -143,11 +133,12 @@ By implication, the group of students in the class in any *given* semester will 
 For example, some students may already have taken a course in the series previously, while others are just starting out.
 Because the previous experiences and learning speed of students vary greatly anyway, this is not a significant (additional) hindrance.
 Tasks, expectations and material covered will accordingly differ for each student, depending on the background.
+:::
 
 
 ## Credits and Listings
 
-You can generally take this class as an undergraduate (Bachelor) lower-divison seminar (**Proseminar**) worth 5 ECTS points, or an upper-division seminar (**Hauptseminar**) worth 7.5 ECTS points.
+You can generally take this class as an undergraduate (Bachelor) lower-division seminar (**Proseminar**) worth 5 ECTS points, or an upper-division seminar (**Hauptseminar**) worth 7.5 ECTS points.
 The workload will be adjusted accordingly.
 
 Depending on your major, you may also take the class to fulfill requirements for a *Masters* program.
@@ -186,7 +177,7 @@ Daniel's introduction to R is a great complement to *FOSSOS*, though it is *not*
 His introduction is focused on running common statistical analyses in R.
 *FOSSOS* is focused on open source tooling *around* R, R as a data science glue language and more advanced R.
 
-If you have *not* taken (or will not) Daniel's (or another) introduction to R, you will probably spend your time in *FOSSOS* learning the broader open source tooling (["Software Carpentry"](https://datascience.phil.fau.de/fossos/stack.html#software_carpentry)) around R, which is still plenty of exciting material to keep you busy for a semester.
+If you have *not* taken (or will not) Daniel's (or another) introduction to R, you will probably spend your time in *FOSSOS* learning the broader open source tooling (["Software Carpentry"](stack.qmd#carpentry)) around R, which is still plenty of exciting material to keep you busy for a semester.
 
 Daniel is *also* kindly hosting an open working group to learn statistics from first principles.
 Contact [Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) if you'd like to attend.
@@ -237,15 +228,13 @@ The goal of this series of seminars is therefore to train participants in a cohe
     - Storing datasets in public repositories such as the Harvard dataverse.
     - Releasing, publishing and indexing finished research using GitHub releases and zenodo.
     - Other tools and practices for open and reproducible science.
-    - Strenghening reproducibility and portability by using dependency management (packrat) and containerisation (docker).
+    - Strengthening reproducibility and portability by using dependency management (packrat) and containerisation (docker).
 - Package Development
     - Including documentation (roxygen2), defensive programming (checkmate), testing (testthat) and more best practices, all following Hadley Wickham's [R packages](http://r-pkgs.had.co.nz).
 
 Towards the end of each of the seminars, participants will be able to use (parts of) this toolchain to work on their own projects, or to contribute to existing free and open source software.
 
-```{r venn, fig.cap="The [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) by Drew Conway (2010)", out.width='100%'}
-knitr::include_graphics(path = "img/Data_Science_VD.png")
-```
+![The [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) by Drew Conway (2010)](img/Data_Science_VD.png)
 
 This course will *not* focus on math and statistics knowledge or substantive domain expertise, though both are essential for solid data science work.
 Rather, the emphasis is on what Drew Conway loosely called *hacking skills* in his [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram), that is, simply getting these tools to work together, to learn how to troubleshoot them, and -- aspirationally -- to absorb some best practices of open source development.
@@ -301,12 +290,12 @@ Happily, there are a *lot* of great resources for learning data science tools ou
 We will be reusing a lot of these resources, and I (the instructor) do not have to reinvent an (inferior) wheel.
 There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
 
-All resources are listed, in roughly advisable chronological order, along with the [stack](/stack).
+All resources are listed, in roughly advisable chronological order, along with the [stack](stack.qmd).
 
-<div class="alert alert-warning role="alert">
-<b>Resources</b> listed in the <a href="/stack">stack</a> are <em>mandatory reading</em>.
-<b>Additional Resources</b> listed in the <a href="/stack">stack</a> are <em>recommended or optional reading</em>.
-</div>
+::: {.alert .alert-warning role="alert"}
+**Resources** listed in the [stack](stack.qmd) are *mandatory reading*.
+**Additional Resources** listed in the [stack](stack.qmd) are *recommended or optional reading*.
+:::
 
 The good news is that there are no academic papers or books for this class and everything students need is available online.
 There is, however, still a lot of material to work through (to the tune of hours per week), though it is written in a hopefully more accessible style than many academic documents.
@@ -317,11 +306,11 @@ In fact, students are encouraged to share good additional resources with the res
 There is a lot of duplicate content between the alternative resources listed.
 Students should browse *each* of the resources, and then work in-depth through whichever they find most suitable.
 
-<div class="alert alert-warning role="alert">
-First-time students of <em>FOSSOS</em> are expected to work through (not just read) all the material listed in the <a href="https://datascience.phil.fau.de/fossos/stack.html#introduction">Introduction</a> and <a href="https://datascience.phil.fau.de/fossos/stack.html#software_carpentry">Software Carpentry</a> sections.
+::: {.alert .alert-warning role="alert"}
+First-time students of *FOSSOS* are expected to work through (not just read) all the material listed in the [Introduction](stack.qmd#introduction) and [Software Carpentry](stack.qmd#carpentry) sections.
 
 Repeat participants in the seminar who have mastered this material can advance to any of the other sections according to their interests and should prepare accordingly.
-</div>
+:::
 
 Whenever your run into a problem, or have a question, raise an issue on our [https://github.com/soztag/fossos/issues](github issue tracker).
 Please also make sure that:
@@ -335,14 +324,14 @@ Please also make sure that:
 ## Schedule
 
 Because students will learn at different speeds, and from different starting points, there is not *a* schedule for the class.
-The [stack](/stack) lists the tools (and resources) in the rough order in which they should be studied.
+The [stack](stack.qmd) lists the tools (and resources) in the rough order in which they should be studied.
 
 Students can work through this material at their own pace.
 Likewise, some students may wish to cover a lot of breadth (at shallow depth), while others want to dig in on a particular topic.
 This is all fine, but students should ensure that they learn *something* at a *useful* level to solve real-world problems, as will also be required for the assessment.
 If in doubt, ask the instructor for guidance.
 
-Every student should first become competent in the practices and tools covered in ["Software Carpentry"](https://datascience.phil.fau.de/fossos/stack.html#software_carpentry); these are required for all later topics.
+Every student should first become competent in the practices and tools covered in ["Software Carpentry"](stack.qmd#carpentry); these are required for all later topics.
 
 As a loose guide, *every* student should cover at least *one* top-level heading ("Interactive R", "Intermediate R", etc.) per semester.
 
@@ -377,7 +366,7 @@ Students should assign themselves to tasks they will be working on, and report /
 **All students**, including those who **just want a "Sitzschein" (pass/fail option)** must contribute to a number of issues labelled as [`pass/fail`](https://github.com/soztag/fossos/labels/pass%2Ffail).
 These are issues that are smaller in scale and scope.
 
-There is no straightfoward minimum metric (say, number of closed issues) to pass the class.
+There is no straightforward minimum metric (say, number of closed issues) to pass the class.
 Instead, students should display substantial contributions across a range of helpful activities, as recorded in the issue tracker.
 
 Before working on these issues, students should *assign themselves*, to avoid us doing duplicate work.
@@ -411,7 +400,7 @@ A well-formulated question, in the context of open source development is often a
 This means that you should provide a code snippet (or, if not applicable, a very precise description of steps) that will *allow any other user to reproduce the behavior in question, with no additional resources*.
 Producing this can be harder than it sounds, and just narrowing down a problem like that may often help you solve it.
 
-Make sure to read and adhere to all the resources listed [community and help](https://www.maxheld.de/fossos/stack.html#community__help).
+Make sure to read and adhere to all the resources listed [community and help](stack.qmd#help).
 
 The three target platforms can be listed roughly in ascending order of precision of the question:
 
@@ -420,7 +409,7 @@ The three target platforms can be listed roughly in ascending order of precision
 2. http://stackoverflow.com:
   Questions should be very precise and reproducible, and be *definitively answerable*.
   Not good for opiniated stuff.
-  Consider the resources listed under [community and help](/stack.html#help).
+  Consider the resources listed under [community and help](stack.qmd#help).
 3. Bug report:
   *If* you're absolutely sure that you have run into a bug, then it can be a good idea to raise it on the repository in question.
   For most things, you should raise it on S-O or community.rstudio first, to be sure that it really *is* a bug.
@@ -428,8 +417,9 @@ The three target platforms can be listed roughly in ascending order of precision
 Here, as with all things open source, we must ensure that other people's time is well-spent engaging our question (or bug report).
 To ensure that, please follow this procedure:
 
-```{r reprex, fig.cap="Sequence Chart for a Reprex"}
-DiagrammeR::mermaid(diagram = "reprex.mmd", height = 1200, width = 800)
+```{mermaid}
+%%| fig-cap: Sequence Chart for a Reprex
+%%| file: reprex.mmd
 ```
 
 
@@ -451,7 +441,7 @@ These are improvements to *external* repos (typically also on GitHub), either ot
 The actual work (forking, raising a pull request, etc.) consequently occurs in the external target repository, and this activity is merely *tracked* in a placeholder issue in the class repository.
 Simply link to any relevant issues, commits or pull requests on the target repo in a placeholder issue.
 
-This sounds quite challening, but it can be quite doable, especially if you're starting by improving the documentation.
+This sounds quite challenging, but it can be quite doable, especially if you're starting by improving the documentation.
 
 To start contributing to open source, you might also find these resources helpful:
 
@@ -463,8 +453,9 @@ To start contributing to open source, you might also find these resources helpfu
 For contributions to external documentation or software, it is very important that we do not burden the respective maintainers with sub-par work.
 To ensure that we deliver high quality work, you **must follow the following procedure**:
 
-```{r external, fig.cap="Sequence Chart for an External Contribution"}
-DiagrammeR::mermaid(diagram = "external.mmd", height = 1800, width = 800)
+```{mermaid}
+%%| fig-cap: Sequence Chart for an External Contribution
+%%| file: external.mmd
 ```
 
 Grading criteria are listed for each of the issues.
@@ -484,107 +475,14 @@ The graded tasks (see above) will be graded using the below rubrics.
 The grading rubric is taken from the [University of British Columbia Master of Data Science program](http://ubc-mds.github.io) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/us/)).
 
 
-```{r grading-rubric, echo=FALSE}
-accuracy <- c(
-  Poor = c(
-    "Code fails to run, doesn't have clear output, or performs the wrong task."
-  ),
-  Unsatisfactory = c(
-    "Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient if performance is a concern."
-  ),
-  Satisfactory = c(
-    "Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient if performance is a concern."
-  ),
-  Good = c(
-    "Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient if performance is a concern."
-  ),
-  Excellent = glue::glue(
-    "Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result.",
-    "Student has chosen the most efficient algorithm reasonable if performance is a concern.",
-    .sep = " "
-  )
-)
-
-mechanics <- c(
-  Poor = glue::glue(
-    "Evaluator was unable to run/open/read assignment submission despite best efforts.",
-    "This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc., or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission.",
-    .sep = " "
-  ),
-  Unsatisfactory = c(
-    "Evaluator had to spend some time to get the raw submission to work correctly"
-  ),
-  Satisfactory = c(
-    "Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted"
-  ),
-  Good = c(
-    "The submission is self-contained and works flawlessly; it just works in anybody's hands."
-  ),
-  Excellent = glue::glue(
-    "The student did not forget to include all the files in the submission.",
-    "Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them.",
-    "Student used the asked for file format.",
-    "All assignment instructions were followed.",
-    "All files were put in a repository, in a reasonable place, with reasonable names; any source files .tex, .Rmd are rendered to a readable output format e.g. .pdf, all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc.",
-    .sep = " "
-  )
-)
-
-code_quality <- c(
-  Poor = glue::glue(
-    "Code is difficult to read and understand due to many issues that affects readability.",
-    "Code is also poorly organized.",
-    .sep = " "
-  ),
-  Unsatisfactory = c(
-    "Code is generally easy to read and understand with few non-reoccurring issues and at most two reoccurring issue that affects readability."
-  ),
-  Satisfactory = c(
-    "Code is generally easy to read and understand with few non-reoccurring issues and at most one reoccurring issue that affects readability"
-  ),
-  Good = c(
-    "Code is easy to read and understand with only 1-2 minor and non-reoccurring issues that affect readability."
-  ),
-  Excellent = glue::glue(
-    "Code is exceptionally easy to read and understand.",
-    "For example, variable names are clear, an appropriate amount of whitespace is used to maximize visibility, tabs and spaces are not mixed for indentation, sufficient comments are given.",
-    "Any coding sections of the assignment that were not completed have documentation explaining what a coded solution would look like.",
-    "Overall, the code is extremely well organized and documented.",
-    .sep = " "
-  )
-)
-
-robustness <- c(
-  Poor = c(
-    "Multiple issues with code repetition exist, and several tests are absent and/or are of poor efficacy"
-  ),
-  Unsatisfactory = c(
-    "Some form of re-occuring code repetition exists, or tests efficacy is poor."
-  ),
-  Satisfactory = c(
-    "Some form of re-occuring code repetition exists, or tests efficacy is poor."
-  ),
-  Good = c(
-    "Code repetition is mostly minimized and effective tests are present for most functions."
-  ),
-  Excellent = glue::glue(
-    "Code repetition is minimized via the use of loops/mapping functions, functions or classes or scripts/files as needed without becoming overly complicated.",
-    "Functions are short, concise, and cohesive without losing clarity; code can be easily modified.",
-    "Tests are present to ensure functions work as expected.",
-    "Exceptions are caught and thrown if necessary, pnce students have learned about exceptions.",
-    .sep = " "
-  )
-)
-
-rubric <- dplyr::bind_rows(
-  `Accuracy 25%` = accuracy,
-  `Code Quality 25%` = code_quality,
-  `Mechanics 25%` = mechanics,
-  `Robustness 25%` = robustness,
-  .id = "Dimension"
-)
-rubric
-```
+::: {.table-responsive}
+| Dimension | Poor | Unsatisfactory | Satisfactory | Good | Excellent |
+|---|---|---|---|---|---|
+| Accuracy 25% | Code fails to run, doesn't have clear output, or performs the wrong task. | Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient if performance is a concern. | Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient if performance is a concern. | Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient if performance is a concern. | Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result. Student has chosen the most efficient algorithm reasonable if performance is a concern. |
+| Code Quality 25% | Code is difficult to read and understand due to many issues that affects readability. Code is also poorly organized. | Code is generally easy to read and understand with few non-reoccurring issues and at most two reoccurring issue that affects readability. | Code is generally easy to read and understand with few non-reoccurring issues and at most one reoccurring issue that affects readability | Code is easy to read and understand with only 1-2 minor and non-reoccurring issues that affect readability. | Code is exceptionally easy to read and understand. For example, variable names are clear, an appropriate amount of whitespace is used to maximize visibility, tabs and spaces are not mixed for indentation, sufficient comments are given. Any coding sections of the assignment that were not completed have documentation explaining what a coded solution would look like. Overall, the code is extremely well organized and documented. |
+| Mechanics 25% | Evaluator was unable to run/open/read assignment submission despite best efforts. This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc., or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission. | Evaluator had to spend some time to get the raw submission to work correctly | Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted | The submission is self-contained and works flawlessly; it just works in anybody's hands. | The student did not forget to include all the files in the submission. Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. Student used the asked for file format. All assignment instructions were followed. All files were put in a repository, in a reasonable place, with reasonable names; any source files .tex, .Rmd are rendered to a readable output format e.g. .pdf, all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc. |
+| Robustness 25% | Multiple issues with code repetition exist, and several tests are absent and/or are of poor efficacy | Some form of re-occurring code repetition exists, or tests efficacy is poor. | Some form of re-occurring code repetition exists, or tests efficacy is poor. | Code repetition is mostly minimized and effective tests are present for most functions. | Code repetition is minimized via the use of loops/mapping functions, functions or classes or scripts/files as needed without becoming overly complicated. Functions are short, concise, and cohesive without losing clarity; code can be easily modified. Tests are present to ensure functions work as expected. Exceptions are caught and thrown if necessary, pnce students have learned about exceptions. |
+:::
 
 
 ## Technical Requirements {#reqs}
@@ -605,15 +503,17 @@ In particular, student laptops must:
 Emphatically, none of this requires a new, powerful or expensive device, let alone software.
 You can get a used laptop with / ready for Linux Ubuntu on EBay for well under €100 (if you buy a used computer, make sure that the hardware has good Linux support).
 With some [tweaking](https://leanpub.com/universities/courses/jhu/cbds-chromebook), you can even use an inexpensive (`x86`) Google Chromebook (which runs on Linux).
-For more information, see [stack](/stack.html#moving_to_linux).
+For more information, see [stack](stack.qmd).
 
 If you are facing financial difficulties in obtaining a laptop for the class, please contact the instructor.
 We'll figure something out for you.
 
 
-### Operating System Maintenance {.alert .alert-warning}
+::: {.alert .alert-warning}
+### Operating System Maintenance
 
 It is *your* responsibility to maintain your own computer and operating system (OS), as well as to figure out how to install the below software on your machine (though we will all help one another within reason).
+:::
 
 
 ### In-Browser Development
@@ -622,7 +522,7 @@ For a ready-made development environment, you can use the  RStudio IDE (integrat
 RStudio is best for R development, but has decent support for other languages and includes access to a terminal and version control.
 
 Using RStudio in the browser means that all the software you're using won't ever *really* be installed on your system, but only exist in a virtual image or online service.
-If you want to do serious development work or are facing edge cases, you may require a "real" installation on your client (see instructions in [stack](/stack.html#moving_to_linux)).
+If you want to do serious development work or are facing edge cases, you may require a "real" installation on your client (see instructions in [stack](stack.qmd)).
 However, in-browser development is a great way to have a standardized environment ready quickly.
 
 You can run the RStudio IDE in your webbrowser in two ways:
@@ -635,9 +535,9 @@ Containers allow you to run computing environments on other computers.
 Containers are similar to virtual machines (a computer inside a computer), but slimmer and generally neater.
 
 A lot of the software you need to run in this class is included in the `rocker/verse` image published by the [Rocker Project](https://rocker-project.org).
-For a list of things you *still* need to install "locally", consult the [stack](/stack.html).
+For a list of things you *still* need to install "locally", consult the [stack](stack.qmd).
 
-For installation instructions, see [here](/stack.html#docker)).
+For installation instructions, see [here](stack.qmd#docker)).
 
 Unfortunately, Docker has some [system requirement](https://docs.docker.com/docker-for-windows/install/) that many Windows versions do not meet.
 
@@ -656,19 +556,19 @@ You are strongly encouraged to invest the time and effort to set up and maintain
 
 Otherwise:
 
-<a class="btn btn-primary" href="https://rstudio.cloud" role="button">Sign up to RStudio Cloud</a>
+[Sign up to RStudio Cloud](https://rstudio.cloud){.btn .btn-primary role="button"}
 
-<div class="alert alert-warning role="alert">
-It's best to sign up with your GitHub account, but this <em>does not</em> give your RStudio Cloud instance read or write privileges to your repos.
-Remember to also configure <a href="https://maurolepore.github.io/cloudgithub/">RStudio Cloud with your git credentials</a>.
-</div>
+::: {.alert .alert-warning role="alert"}
+It's best to sign up with your GitHub account, but this *does not* give your RStudio Cloud instance read or write privileges to your repos.
+Remember to also configure [RStudio Cloud with your git credentials](https://maurolepore.github.io/cloudgithub/).
+:::
 
 You should also study the [RStudio Cloud guide](https://rstudio.cloud/learn/guide).
 
 
 ### Linux
 
-<a class="btn btn-info" href="linux.html" role="button">Learn More</a>
+[Learn More](linux.qmd){.btn .btn-info role="button"}
 
 If you want to install the programs used in this class on your system, rather than use them through a (Docker) container, you may find it easier to do that on Unix-compatible operating systems, including macOS and Linux.
 Getting Windows to play nicely with open source software can be harder, and some convenient system utilities (such as a package manager) are often missing.
@@ -700,13 +600,31 @@ There is no guarantee that any of these alternatives or links will work for you;
 
 A big **Thank You** to all contributors (in alphabetical order by username):
 
-```{r contribs, echo=FALSE, results='asis', message=FALSE}
-# wrappers are necessary to shut up chatty function
-# function apparently chats via cat, which cannot be disabled in chunk options
-invisible(capture.output(
-  contribs <- usethis::use_tidy_thanks()
-))
-cat(paste0(" [",contribs,"]","(https://www.github.com/",contribs,"), "))
-```
+[aDeLe24](https://github.com/aDeLe24),
+[adrianapinto19](https://github.com/adrianapinto19),
+[AndreM92](https://github.com/AndreM92),
+[AndrewR25](https://github.com/AndrewR25),
+[banjanama](https://github.com/banjanama),
+[Ch1pzZz](https://github.com/Ch1pzZz),
+[Char-XWW](https://github.com/Char-XWW),
+[Crisphi](https://github.com/Crisphi),
+[DOC-fau](https://github.com/DOC-fau),
+[DomBert](https://github.com/DomBert),
+[Elen93](https://github.com/Elen93),
+[gvwilson](https://github.com/gvwilson),
+[juliatell](https://github.com/juliatell),
+[KonsWeb](https://github.com/KonsWeb),
+[maxheld83](https://github.com/maxheld83),
+[mkkkt](https://github.com/mkkkt),
+[Mococoa22](https://github.com/Mococoa22),
+[MoPau](https://github.com/MoPau),
+[nke07](https://github.com/nke07),
+[PaddyGlass](https://github.com/PaddyGlass),
+[PaulFalcke](https://github.com/PaulFalcke),
+[samshaffer97](https://github.com/samshaffer97),
+[spaniel01](https://github.com/spaniel01),
+[SvenNekula](https://github.com/SvenNekula),
+[t-rop](https://github.com/t-rop),
+[VerenaHeld](https://github.com/VerenaHeld)
 
 ## References
